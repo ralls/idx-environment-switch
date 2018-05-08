@@ -1,0 +1,31 @@
+{
+    "name": "IDX Environment Switcher",
+    "version": "1.0",
+    "description": "Switch the current page to a local environment",
+    "permissions": ["declarativeContent", "tabs", "storage"],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./16x16.png",
+            "32": "./32x32.png",
+            "48": "./48x48.png",
+            "128": "./128x128.png"
+        }
+    },
+    "commands": {
+        "_execute_page_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E"
+            },
+            "description": "Open the extension popup"
+        }
+    },
+    "manifest_version": 2
+}

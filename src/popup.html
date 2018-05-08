@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            html,
+            body * {
+                font-size: 13px;
+                font-family: 'Muli', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+
+            body {
+                background-color: #fff;
+                color: #333B46;
+                margin: 0;
+                position: relative;
+                min-width: 200px;
+                max-width: 100%;
+                vertical-align: middle;
+            }
+
+            .idx-header {
+                padding: 1rem 1.75rem;
+                border-bottom: 1px solid #f3f5f5;
+            }
+
+            .idx-logo {
+                display: block;
+                width: 100px;
+                margin: 0 auto;
+            }
+
+            #available {
+                padding: 1rem;
+            }
+
+            .idx-h3 {
+                margin-top: 0;
+                font-size: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-weight: 400;
+            }
+
+            .idx-button {
+                display: block;
+                padding: 8px 16px;
+                color: #fff;
+                border-radius: 2px;
+                width: 100%;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                font-weight: 400;
+                border-width: 1px;
+                border-style: solid;
+                border-color: transparent;
+                line-height: 13px;
+                cursor: pointer;
+                transition: all .3s ease-in;
+            }
+
+            .idx-button--live {
+                background-color: #1e6a8e;
+                border-color: #1e6a8e;
+            }
+
+            .idx-button--sandbox,
+            .idx-button--staging {
+                background-color: #3ca5d6;
+                border-color: #3ca5d6;
+            }
+
+            .idx-button--sandbox:hover,
+            .idx-button--sandbox:focus,
+            .idx-button--staging:hover,
+            .idx-button--staging:focus {
+                background-color: #2992c3;
+                border-color: #2992c3;
+            }
+
+            .idx-button--local {
+                background-color: #f5f5f5;
+                border-color: #f5f5f5;
+                color: #333B46;
+            }
+
+            .idx-button--local:focus,
+            .idx-button--local:hover {
+                background-color: #ccc;
+                border-color: #ccc;
+            }
+
+            .idx-button:focus {
+                outline: none;
+            }
+
+            .idx-button:first-child {
+                margin-top: 5px;
+            }
+
+            .idx-button:last-child {
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="idx-header">
+            <img class="idx-logo" src="./idx-logo.svg" />
+        </div>
+        <div id="available"></div>
+        <script src="popup.js"></script>
+    </body>
+</html>
